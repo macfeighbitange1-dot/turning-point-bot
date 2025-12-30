@@ -1,0 +1,7 @@
+{
+  "products": [
+    {"id": 1, "name": "DAP Fertilizer 50kg", "price": 3500},
+    {"id": 2, "name": "Cattle Dip 1L", "price": 1200},
+    {"id": 3, "name": "Hybrid Maize Seeds 2kg", "price": 800}
+  ]
+}

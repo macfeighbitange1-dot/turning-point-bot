@@ -1,0 +1,120 @@
+{
+  "business_info": {
+    "name": "Turning Point Agrovet",
+    "locations": {
+      "english": "We are based in Nairobi with branches in Kirinyaga, Nanyuki, and Nakuru.",
+      "swahili": "Tuko Nairobi na branches huko Kirinyaga, Nanyuki, na Nakuru. Karibu sana, rafiki!"
+    },
+    "delivery": {
+      "english": "We deliver within Nairobi, the entire Central region of Kenya, and the Rift Valley.",
+      "swahili": "Tunafanya delivery Nairobi, Central mzima, na Rift Valley. Bidhaa inafika haraka haraka!"
+    },
+    "greetings": {
+      "english": "Hello! Welcome to Turning Point Agrovet 👋 We're your trusted partner for quality farm inputs and expert advice.",
+      "swahili": "Niaje! Karibu Turning Point Agrovet 👋 Tuko hapa kwa bidhaa bora na ushauri wa kilimo wa kitaalam."
+    }
+  },
+
+  "faq": [
+    {
+      "keywords": ["hours", "time", "mufunguliwa", "opening", "close", "funga", "saa ngapi", "open when"],
+      "response": {
+        "english": "We are open Monday–Saturday: 8:00 AM to 6:00 PM\nSunday: 9:00 AM to 2:00 PM",
+        "swahili": "Tufunguliwa Jumatatu–Jumamosi: 8 asubuhi hadi 6 jioni\nJumapili: 9 asubuhi hadi 2 alasiri"
+      }
+    },
+    {
+      "keywords": ["payment", "lipa", "mpesa", "cash", "malipo", "pay how", "accept mpesa"],
+      "response": {
+        "english": "We accept M-Pesa, cash on delivery, and bank transfer. Just type 'Buy' after asking about any product to pay instantly via M-Pesa!",
+        "swahili": "Tunakubali M-Pesa, cash wakati wa delivery, na bank transfer. Andika 'Buy' baada ya kuuliza bidhaa yoyote ili ulipe M-Pesa mara moja!"
+      }
+    }
+  ],
+
+  "consultation": [
+    {
+      "topic": "maize_yellow",
+      "keywords": ["yellow", "leaves", "njano", "majani", "rangi", "maharagwe", "maize disease", "mahindi njano", "mahindi yellow"],
+      "response": {
+        "english": "Yellow leaves in maize usually mean Nitrogen deficiency or Maize Lethal Necrosis (MLND). Top-dress with CAN fertilizer or bring a sample for soil test. Any other symptoms?",
+        "swahili": "Majani ya mahindi yakigeuka njano mara nyingi ni ukosefu wa Nitrogen au MLND. Weka CAN mbolea ya juu au ulete sample tufanyie soil test. Kuna dalili zingine?"
+      }
+    },
+    {
+      "topic": "fall_armyworm",
+      "keywords": ["viwavi", "army worm", "fall armyworm", "maize worm", "minyoo mahindi", "wadudu mahindi", "viwavi vikubwa"],
+      "response": {
+        "english": "Fall Armyworm destroys maize fast. Use Rocket, Coragen or Belt insecticides. Spray early morning and repeat after 7–10 days. Act quickly!",
+        "swahili": "Viwavi (Fall Armyworm) huharibu mahindi haraka. Tumia dawa kama Rocket, Coragen au Belt. Nyunyizia asubuhi na urudie baada ya siku 7-10."
+      }
+    },
+    {
+      "topic": "poultry_cough",
+      "keywords": ["cough", "kukohoa", "mafua", "sneezing", "kuku disease", "pumzi", "kuku kohoa", "kuku mafua", "kuku pumzi mbaya"],
+      "response": {
+        "english": "Coughing/sneezing in chickens could be CRD or Newcastle disease. Isolate sick birds immediately and treat with Tylodox, Aliseryl or Doxy-Gen. How many are affected?",
+        "swahili": "Kuku wakikohoa au kupumua vibaya inaweza kuwa CRD au Newcastle. Watenge mara moja na utumie Tylodox, Aliseryl au Doxy-Gen. Wangapi wana shida?"
+      }
+    },
+    {
+      "topic": "milk_production",
+      "keywords": ["milk", "ziwa", "maziwa", "low production", "ngombe haatoi maziwa", "dairy low", "maziwa kidogo", "ngombe maziwa"],
+      "response": {
+        "english": "Low milk? Give plenty of clean water, quality Dairy Meal, and minerals like Fosflow or Maclik. Check for mastitis too. What's their current feed?",
+        "swahili": "Maziwa kidogo? Hakikisha maji safi ya kutosha, Dairy Meal poa, na madini kama Fosflow au Maclik. Angalia pia tezi. Unawalisha nini sasa?"
+      }
+    },
+    {
+      "topic": "mastitis_cows",
+      "keywords": ["tezi", "mastitis", "maziwa na damu", "ngombe tezi", "swollen udder", "maziwa ganda", "tezi kuvimba"],
+      "response": {
+        "english": "Mastitis: swollen udder, clotted milk or blood. Use intramammary tubes like Tetra-Delta or Noroclox. Call vet if severe.",
+        "swahili": "Tezi (mastitis): tezi kuvimba, maziwa kuganda au damu. Tumia sindano za ndani kama Tetra-Delta au Noroclox. Piga daktari kama ni mbaya."
+      }
+    },
+    {
+      "topic": "deworming",
+      "keywords": ["minyoo", "deworm", "tumboni minyoo", "ngombe kupungua uzito", "kuku minyoo", "dewormer", "punguza minyoo"],
+      "response": {
+        "english": "Deworm cattle every 3 months, poultry every 2 months. We stock Valbazen, Nilzan Plus and Piperazine.",
+        "swahili": "Punguza minyoo kwa ng'ombe kila miezi 3, kuku kila miezi 2. Tuko na Valbazen, Nilzan Plus na Piperazine."
+      }
+    },
+    {
+      "topic": "foot_rot",
+      "keywords": ["miguu kuoza", "foot rot", "sheep lame", "kondo anaumia mguu", "mbuzi mguu", "hoof rot"],
+      "response": {
+        "english": "Foot rot causes limping and bad smell. Use Terramycin spray or foot bath with copper/zinc sulphate. Keep dry.",
+        "swahili": "Miguu kuoza husababisha kuchechea na harufu mbaya. Tumia Terramycin spray au loweka miguu kwenye copper/zinc sulphate. Weka kavu."
+      }
+    },
+    {
+      "topic": "pest_control",
+      "keywords": ["pests", "wadudu", "insects", "aphids", "tuta", "bugs", "wadudu shamba", "dawa wadudu"],
+      "response": {
+        "english": "For aphids, caterpillars or tuta absoluta, use Duduthrin, Rocket or Belt. Apply early morning. Which crop?",
+        "swahili": "Kwa tuta, viwavi au wadudu wengine, tumia Duduthrin, Rocket au Belt. Nyunyizia asubuhi mapema. Ni mazao gani?"
+      }
+    }
+  ],
+
+  "products": [
+    {"name": "DAP Fertilizer (50kg)", "price": 2500, "keywords": ["dap", "planting", "kupanda", "mbolea ya kupanda", "dap mbolea"]},
+    {"name": "CAN Fertilizer (50kg)", "price": 1900, "keywords": ["can", "top dress", "mbolea ya juu", "can mbolea", "topdressing"]},
+    {"name": "Urea Fertilizer (50kg)", "price": 2800, "keywords": ["urea", "mbolea urea"]},
+    {"name": "Dairy Meal (50kg)", "price": 2400, "keywords": ["dairy meal", "chakula cha ngombe", "maziwa meal", "ngombe meal"]},
+    {"name": "Chick Mash (50kg)", "price": 2800, "keywords": ["chick mash", "vifaranga chakula", "kuku mdogo", "chicks feed"]},
+    {"name": "Layers Mash (50kg)", "price": 2600, "keywords": ["layers", "mayai mash", "kuku matumbi", "layers mash"]},
+    {"name": "Duduthrin Insecticide", "price": 550, "keywords": ["duduthrin", "pesticide", "dawa ya wadudu", "mdudu"]},
+    {"name": "Rocket Insecticide", "price": 1200, "keywords": ["rocket", "viwavi dawa", "armyworm", "fall armyworm dawa"]},
+    {"name": "Valbazen Dewormer", "price": 800, "keywords": ["valbazen", "minyoo dawa", "dewormer"]},
+    {"name": "Fosflow Minerals", "price": 1500, "keywords": ["fosflow", "madini", "minerals", "ngombe madini"]},
+    {"name": "Tylodox Powder", "price": 950, "keywords": ["tylodox", "kuku mafua", "tylosin"]},
+    {"name": "Maclik Super", "price": 1400, "keywords": ["maclik", "madini lick", "ngombe lick"]}
+  ],
+
+  "general_keywords": {
+    "products_list": ["fertilizer gani", "mbolea gani", "mko na nini", "what products", "available products", "bidhaa zenu", "mnauza nini", "stock gani", "mko na mbolea", "mnauza", "products zenu", "bei list"]
+  }
+}
