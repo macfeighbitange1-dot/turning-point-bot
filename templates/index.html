@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turning Point Bot | Live Status</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-dim: #94a3b8;
+            --accent: #38bdf8;
+            --success: #34d399;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .dashboard-card {
+            background-color: var(--card-bg);
+            padding: 2.5rem;
+            border-radius: 24px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+            border: 1px solid #334155;
+            text-align: center;
+            max-width: 450px;
+            width: 90%;
+        }
+
+        .status-container {
+            margin-bottom: 1.5rem;
+        }
+
+        .status-badge {
+            background: rgba(52, 211, 153, 0.1);
+            color: var(--success);
+            padding: 8px 16px;
+            border-radius: 100px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            letter-spacing: 0.5px;
+        }
+
+        .pulse-dot {
+            width: 8px;
+            height: 8px;
+            background-color: var(--success);
+            border-radius: 50%;
+            position: relative;
+        }
+
+        .pulse-dot::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: var(--success);
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); opacity: 0.8; }
+            100% { transform: scale(3); opacity: 0; }
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            margin: 0.5rem 0;
+            color: var(--accent);
+            font-weight: 600;
+        }
+
+        p {
+            color: var(--text-dim);
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 12px;
+            text-align: left;
+            background: rgba(15, 23, 42, 0.5);
+            padding: 1.2rem;
+            border-radius: 12px;
+            font-size: 0.9rem;
+        }
+
+        .info-item {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .label { color: var(--text-dim); }
+        .value { color: var(--text-main); font-weight: 600; }
+
+        .footer {
+            margin-top: 2rem;
+            font-size: 0.75rem;
+            color: #475569;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="dashboard-card">
+        <div class="status-container">
+            <div class="status-badge">
+                <div class="pulse-dot"></div>
+                SYSTEM ACTIVE
+            </div>
+        </div>
+
+        <h1>Turning Point Bot</h1>
+        <p>Your WhatsApp automation server is live. Incoming messages from Twilio are being processed by the brain engine.</p>
+
+        <div class="info-grid">
+            <div class="info-item">
+                <span class="label">Platform</span>
+                <span class="value">WhatsApp / Twilio</span>
+            </div>
+            <div class="info-item">
+                <span class="label">Server</span>
+                <span class="value">Render Python 3.x</span>
+            </div>
+            <div class="info-item">
+                <span class="label">Endpoint</span>
+                <span class="value">/whatsapp</span>
+            </div>
+        </div>
+
+        <div class="footer">
+            &copy; 2024 Turning Point Bot • Active Deployment
+        </div>
+    </div>
+
+</body>
+</html>
