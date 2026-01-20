@@ -1,33 +1,69 @@
-from flask import Flask, request
-from twilio.twiml.messaging_response import MessagingResponse
-from brain_engine import get_menu_response
-import os
-
-app = Flask(__name__)
-
-# Dictionary to keep track of user steps (Memory)
-user_sessions = {}
-
-@app.route("/", methods=['GET'])
-def home():
-    return "Turning Point Bot is Live and Healthy!", 200
-
-@app.route("/whatsapp", methods=['POST'])
-def whatsapp_reply():
-    # Get details from Twilio request
-    sender_id = request.values.get('From')
-    incoming_msg = request.values.get('Body', '')
-    
-    # Process the message through our logic engine
-    reply_text = get_menu_response(sender_id, incoming_msg, user_sessions)
-    
-    # Build Twilio TwiML response
-    resp = MessagingResponse()
-    resp.message(reply_text)
-    
-    return str(resp)
-
-if __name__ == "__main__":
-    # Get port from environment or default to 10000 for Render
-    port = int(os.environ.get("PORT", 10000))
-    app.run(host='0.0.0.0', port=port)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turning Point Bot | Dashboard</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            background: #1e293b;
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+            border: 1px solid #334155;
+            max-width: 400px;
+        }
+        .status-badge {
+            display: inline-block;
+            background: #065f46;
+            color: #34d399;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+        h1 { margin: 10px 0; color: #38bdf8; }
+        p { color: #94a3b8; line-height: 1.6; }
+        .footer { margin-top: 30px; font-size: 0.7rem; color: #475569; }
+        .pulse {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background: #34d399;
+            border-radius: 50%;
+            margin-right: 5px;
+            box-shadow: 0 0 0 rgba(52, 211, 153, 0.4);
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(52, 211, 153, 0.7); }
+            70% { transform: scale(1); box-shadow: 0 0 0 10px rgba(52, 211, 153, 0); }
+            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(52, 211, 153, 0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="status-badge"><span class="pulse"></span> System Live</div>
+        <h1>Turning Point Bot</h1>
+        <p>The WhatsApp automation engine is running successfully.</p>
+        <p>Connected to <strong>Twilio API</strong>.</p>
+        <div class="footer">
+            Hosted on Render • Powered by Python & Flask
+        </div>
+    </div>
+</body>
+</html>
